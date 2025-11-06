@@ -1,14 +1,36 @@
-# Come-on-and-reveal-your-daily-horoscope-!
------
+
+Kirstyn Navarro
+MatchBox - Application Development Final Project
+
+Sprint 1 Task List:
+---- 
+
 - Join KSU IS GitHub THIS IS DONE!
 - Set up README THIS IS DONE!
 - Setup task list with check boxes THIS IS DONE ! 
-- Find a related repository DONE ! 
+- Find a related repository DONE ! (Come-on-and-reveal-your-daily-horoscope-!)
 - Ensure that repository is public THIS IS DONE !
 - Make sure team members have access to the repository THIS IS DONE ! 
 - Test a respository DONE !
 - Run the repository DONE ! 
 - Create URL's for Github profile and ensure one link has "ksu-is" and "commit" THIS IS DONE!
-- Document how to make it work DONE !
-- Report any issues found DONE ! 
-- Keep looking for more examples DONE !
+
+Existing base Repository: Come-on-and-reveal-your-daily-horoscope-!
+
+This repository is a Python-based prototype to match user with a horoscope prediction based on their horoscope. This repository will serve as my base due to the matchmaking code already created. The app is build with Flask, HTML/CSS, and JSON data storage.
+
+MatchBox will:
+- Run on Flask as a web application.
+- gather input from user for classification (name, completed the personality test?, personality archetype)
+- integrate personality library with 16 personality archetypes and their respective traits in a relationship. 
+- Use the Meyers Briggs Personality quiz to find 3 ideal matches based on compatibility.
+- Includes python files for matching logic and storage of user profiles.
+- stores user data locally in JSON formatting.
+
+Sprint 2 Task List:
+
+- implement personality library to classify users.
+- design a matching program to measure "compatibility score" with other users.
+- make sure user data storage is easily accessible and retreivable.
+- make sure user profiles save for future users.
+- make user interface easier to operate.
