@@ -1,103 +1,61 @@
 print("Welcome to Come On and Reveal Your Daily Horoscope! Want to know about your Horoscope? Well come and explore about different horoscopes!")
-user_name = input("Please enter your name here and we will get started! ^_^")
+user_name = input("Please enter your Personality type here and we will get started! ^_^")
 print("Hello",user_name,"please review all of the zodiac signs")
-proceed = True
-while proceed == True:
-    print("""
-(1) - Aries
-(2) - Taurus
-(3) - Gemini
-(4) - Cancer
-(5) - Leo
-(6) - Vigro
-(7) - Libra
-(8) - Scorpio
-(9) - Saggitarius
-(10) - Capricon
-(11) - Aquarius
-(12) - Pisces
-""")
-# I have to make sure that I put every daily horoscope with their corresponding zodiac signs 
-    zodiac_sign = int(input("\nPlease enter the number that associates to your Zodiac-Sign! "))
 
-    if zodiac_sign == 1:       # This is the daily horoscope of aries
-        #I did this change because I needed to know what this part of the code is
-        
-        print(user_name,"""Your daily horoscope is......
-Friends or a group could bring new and exciting information your way,
-perhaps involving career or educational opportunities. 
-You might explore combining artistic talents with modern technology.
-Invitations to related social events could follow. Accept as many as you can, Aries. 
-They could make a difference in your personal, professional, and creative lives.""")
-
-
-    elif zodiac_sign == 2:      # for taurus
-        print(user_name,"""Your daily horoscope is......
-Today you could decide to host a virtual party or small meeting in your home. 
-You miss having a lot of visitors. 
-This should be an exciting occasion, Taurus, and you could go out of your way to make this the best small event possible. 
-It will probably be worth it. 
-This event could bring people and information your way that make a big difference to you!""")
-
-
-    elif zodiac_sign == 3:     # for gemini
-        print(user_name,"""Your daily horoscope is......
-Vast amounts of information could come to you through email or phone.
-Expect to hear from groups. You could make new friends, Gemini, possibly in your neighborhood, as changes could be taking place in your community. 
-You could hear of online classes you want to take. Books or magazines may bring valuable information. 
-This could be a very stimulating and significant day.""")
-
-
-    elif zodiac_sign == 4:     # for cancer
-        print(user_name,"""Your daily horoscope is......
-Have you been thinking about expanding your computer skills? If so, this is the day to do it. You're likely to discover a lot of valuable information, as well as shortcuts for accomplishing your goals. Happiness reigns in the home as family members exchange a lot of new and interesting ideas. This could be a very gratifying day in a lot of ways, Cancer!""")
-
-
-    elif zodiac_sign == 5:     # for leo
-        print(user_name,"""Your daily horoscope is......
-!""")
-
-
-    elif zodiac_sign == 6:     # for vigro
-        print(user_name,"""Your daily horoscope is......
-!""")
-
-
-    elif zodiac_sign == 7:    # for libra
-        print(user_name,"""Your daily horoscope is......
-.""")
-
-
-    elif zodiac_sign == 8:     # for scorpio
-        print(user_name,"""Your daily horoscope is......
-.""")
-
-
-    elif zodiac_sign == 9:     # for sagittarius
-        print(user_name,"""Your daily horoscope is......
-!""")
-
-
-    elif zodiac_sign == 10:      # for capricon
-        print(user_name,"""Your daily horoscope is......
-!""")
-
-
-    elif zodiac_sign == 11:    # for aquarius
-        print(user_name,"""Your daily horoscope is......
-.""")
-
-
+def personality_test():
+    proceed = ["INTJ", "INTP", "ENTJ", "ENTP","INFJ", "INFP", "ENFJ", "ENFP","ISTJ", "ISFJ", "ESTJ", "ESFJ","ISTP", "ISFP", "ESTP", "ESFP"]
+    while proceed == True:
+        print("""
+    (1) - INTJ
+    (2) - INTP
+    (3) - ENTJ
+    (4) - ENTP
+    (5) - INFJ
+    (6) - INFP
+    (7) - ENFJ
+    (8) - ENFP
+    (9) - ISTJ
+    (10) - ISFJ
+    (11) - ESTJ
+    (12) - ESFJ
+    (13) - ISTP
+    (14) - ISFP
+    (15) - ESTP
+    (16) - ESFP
+    """)
+    if user_name.upper() == proceed[0]:
+        print("Best Match: ENFP\nWhy? ENFPs bring emotional warmth and flexibility to the INTJ’s structured, strategic mindset. They complement each others' weak spots and both value deep intellectual connection.")
+    elif user_name.upper() == proceed[1]:
+        print("Best Match: ENTJ\nWhy? ENTJs provide structure and drive that help INTPs actualize ideas, while INTPs provide creativity and analysis. They stimulate each other intellectually.")
+    elif user_name.upper() == proceed[2]:
+        print("Best Match: INTP\nWhy? INTPs balance the ENTJ’s intensity with curiosity and logic. ENTJs appreciate INTPs' depth of thought and novel ideas.")
+    elif user_name.upper() == proceed[3]:
+        print("Best Match: INFJ\nWhy? INFJs stabilize ENTPs' chaotic energy while appreciating their creativity. Both are visionary and growth-focused.")
+    elif user_name.upper() == proceed[4]:
+        print("Best Match: ENFP\nWhy? ENFPs bring warmth and spontaneity that INFJs need, while INFJs provide grounding and emotional insight. Both share intuition and deep values.")
+    elif user_name.upper() == proceed[5]:
+        print("Best Match: ENFJ\nWhy? ENFJs help INFPs express their feelings and goals externally, while INFPs give ENFJs a gentle emotional refuge. Both value authenticity and connection.")
+    elif user_name.upper() == proceed[6]:
+        print("Best Match: INFP\nWhy? INFPs offer emotional depth and individuality, balancing the ENFJ’s leadership and empathy. They communicate well and share values.")
+    elif user_name.upper() == proceed[7]:
+        print("Best Match: INTJ\nWhy? INTJs offer stability and focus to ENFPs’ enthusiasm, while ENFPs help INTJs open up emotionally and explore possibilities.")
+    elif user_name.upper() == proceed[8]:
+        print("Best Match: ESFP\nWhy? ESFPs bring spontaneity and warmth to the ISTJ’s structured, responsible nature. ISTJs provide stability and reliability in return.")
+    elif user_name.upper() == proceed[9]:
+        print("Best Match: ESFP\nWhy? ESFPs help ISFJs loosen up and try new things, while ISFJs offer loyalty, harmony, and emotional support. Both focus on people and experiences.")
+    elif user_name.upper() == proceed[10]:
+        print("Best Match: ISTP\nWhy? ISTPs bring calm problem-solving and flexibility that balance the ESTJ’s drive and structure. Both value efficiency and practicality.")
+    elif user_name.upper() == proceed[11]:
+        print("Best Match: ISFP\nWhy? ISFPs offer creativity and emotional depth, balancing ESFJs’ social energy and caretaking tendencies. Both value harmony and connection.")
+    elif user_name.upper() == proceed[12]:
+        print("Best Match: ESTJ\nWhy? ESTJs provide direction and decisiveness that complement ISTPs’ independence and adaptability. Both are logical and action-oriented.")
+    elif user_name.upper() == proceed[13]:
+        print("Best Match: ESFJ\nWhy? ESFJs bring structure and warmth that help ISFPs feel supported, while ISFPs add creativity and emotional sensitivity to the relationship.")
+    elif user_name.upper() == proceed[14]:
+        print("Best Match: ISFJ\nWhy? ISFJs provide grounding and emotional steadiness to ESTPs’ energetic lifestyle. ESTPs help ISFJs explore new experiences.")
+    elif user_name.upper() == proceed[15]:
+        print("Best Match: ISTJ\nWhy? ISTJs offer reliability and structure, balancing ESFPs’ spontaneity and fun. Both value real-world experiences and practicality.")
     else:
-        print(user_name,"""Your daily horoscope is......
-.""")
+        print("Sorry, that personality type is not recognized.")
 
-    temp = input("Would you like to continue again yes / no ? ")
-    if temp == "yes":
-        proceed = True
-    else:
-        proceed = False
-
-else:
-    print("\nI hope you were very excited to know about your Horoscope.",user_name,"!!")
-    print("\nI hope you'll come back again to read about another amazing horoscope !!")
+personality_test()

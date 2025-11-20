@@ -21,11 +21,9 @@ while proceed == True:
 (15) - ESTP
 (16) - ESFP
 """)
-# I have to make sure that I put every daily horoscope with their corresponding zodiac signs 
-    zodiac_sign = int(input("\nPlease enter the number that associates to your Zodiac-Sign! "))
+    zodiac_sign = int(input("\nPlease enter the number that associates to your personality result! "))
 
-    if zodiac_sign == 1:       # This is the daily horoscope of aries
-        #I did this change because I needed to know what this part of the code is
+    if zodiac_sign == 1:       
         
         print(user_name,"""Your daily horoscope is......
 Friends or a group could bring new and exciting information your way,
@@ -103,5 +101,5 @@ Have you been thinking about expanding your computer skills? If so, this is the 
         proceed = False
 
 else:
-    print("\nI hope you were very excited to know about your Horoscope.",user_name,"!!")
-    print("\nI hope you'll come back again to read about another amazing horoscope !!")
+    print("\nI hope you were very excited to know about your potential match.",user_name,"!!")
+    print("\nGoodbye!!")
