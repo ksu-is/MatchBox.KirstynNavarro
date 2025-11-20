@@ -1,21 +1,25 @@
-print("Welcome to Come On and Reveal Your Daily Horoscope! Want to know about your Horoscope? Well come and explore about different horoscopes!")
-user_name = input("Please enter your name here and we will get started! ^_^")
-print("Hello",user_name,"please review all of the zodiac signs")
+print("Welcome to MATCHBOX. Find your perfect personality partner! (please complete Meyers Briggs 16 Personality test prior)")
+user_name = input("Enter your First Name, Last Name")
+print("Hello",user_name,"please enter your Meyers Briggs Personality Test Type")
 proceed = True
 while proceed == True:
     print("""
-(1) - Aries
-(2) - Taurus
-(3) - Gemini
-(4) - Cancer
-(5) - Leo
-(6) - Vigro
-(7) - Libra
-(8) - Scorpio
-(9) - Saggitarius
-(10) - Capricon
-(11) - Aquarius
-(12) - Pisces
+(1) - INTJ
+(2) - INTP
+(3) - ENTJ
+(4) - ENTP
+(5) - INFJ
+(6) - INFP
+(7) - ENFJ
+(8) - ENFP
+(9) - ISTJ
+(10) - ISFJ
+(11) - ESTJ
+(12) - ESFJ
+(13) - ISTP
+(14) - ISFP
+(15) - ESTP
+(16) - ESFP
 """)
 # I have to make sure that I put every daily horoscope with their corresponding zodiac signs 
     zodiac_sign = int(input("\nPlease enter the number that associates to your Zodiac-Sign! "))
