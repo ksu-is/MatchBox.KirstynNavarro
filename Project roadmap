@@ -29,8 +29,35 @@ MatchBox will:
 
 Sprint 2 Task List:
 
-- implement personality library to classify users.
-- design a matching program to measure "compatibility score" with other users.
-- make sure user data storage is easily accessible and retreivable.
-- make sure user profiles save for future users.
-- make user interface easier to operate.
+- implement personality library to classify users. DONE
+- make sure user data storage is easily accessible and retreivable. DONE
+- make sure user profiles save for future users. DONE
+- make user interface easier to operate. DoNE
+
+Sprint 2 deliverables:
+ Installed and tested a personality library for MBTI classification.
+
+ Created user profile structure (name, MBTI type, test completion).
+
+ Developed the program logic to classify the user’s MBTI type.
+
+ Removed “3 match results” design and replaced it with single ideal match type logic.
+
+ Built a compatibility dictionary mapping each MBTI type → ideal match type.
+
+ Updated JSON storage to save user profiles for future sessions.
+
+ Improved Flask input flow (user → classification → ideal match result).
+
+ Added meaningful commit messages documenting every significant change.
+
+Sprint 3 To-Do list:
+
+Validate user input to prevent invalid or blank personality submissions.
+
+Improve formatting of match results on the HTML page.
+
+Add additional relationship traits to refine ideal match recommendations.
+
+Add more meaningful test profiles for validation.
+
