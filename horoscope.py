@@ -59,3 +59,4 @@ def personality_test():
         print("Sorry, that personality type is not recognized.")
 
 personality_test()
+
